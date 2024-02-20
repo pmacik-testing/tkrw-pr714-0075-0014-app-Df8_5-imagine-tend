@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-flu0
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr714-0075-0014-tenant/tkrw-pr714-0075-0014-app/devfile-sample-flu0@sha256:c37df3743081c9dfeaadb24466a9d0bacda079c5fc6c4cf677e1dda4721fb46b
+        name: my-nodejs
+        resources: {}
+status: {}
